@@ -1,60 +1,33 @@
+/* seletor universal */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* seletor de elementos */
 body {
   color: #444;
   font-family: sans-serif;
-
   border-top: 10px solid #1098ad;
-}
-
-.container {
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-  padding: 20px 40px;
-  margin-bottom: 60px;
-  height: 80px;
-}
-
-nav {
-  font-size: 18px;
+  position: relative;
 }
 
 article {
   margin-bottom: 60px;
 }
 
-.post-header {
-  margin-bottom: 40px;
+nav {
+  font-size: 18px;
+  display: block;
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
   padding: 50px 0;
   width: 500px;
 }
-
-/* h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
-} */
 
 h1,
 h2,
@@ -71,6 +44,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -86,6 +60,15 @@ h4 {
   text-align: center;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h3 + p::first-line {
+  background-color: red;
+} */
+
 p {
   font-size: 22px;
   line-height: 1.5;
@@ -97,35 +80,44 @@ ol {
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
 li {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-li:last-child {
-  margin-bottom: 0;
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
 
-/* footer p {
-  font-size: 16px;
-} */
+/* classes e pseudoclasses */
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
 
-/* article header p {
-  font-style: italic; 
-} */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
 
 .post-img {
   width: 100%;
   height: auto;
-}
-
-#author {
-  font-style: italic;
-  font-size: 18px;
-}
-
-#copyright {
-  font-size: 16px;
 }
 
 .related-author {
@@ -137,13 +129,19 @@ li:last-child {
   list-style: none;
 }
 
-/* img {
-  border-radius: 3%;
-} */
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
 
-/* .first-li {
-  font-weight: bold;
-} */
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
 
 li:first-child {
   font-weight: bold;
@@ -167,4 +165,29 @@ a:hover {
 a:active {
   background-color: purple;
   font-style: italic;
+}
+
+/* elementos com ID */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* pseudo-elemento after e before */
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
