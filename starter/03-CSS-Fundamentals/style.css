@@ -152,14 +152,14 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
-  color: #1098ad;
-}
-
 a:hover {
   color: orangered;
   font-weight: bold;
   text-decoration: underline dotted;
+}
+
+a:visited {
+  color: #1098ad;
 }
 
 a:active {

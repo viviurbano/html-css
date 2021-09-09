@@ -20,7 +20,6 @@ GREY COLOR: #343a40
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  /* font-family: sans-serif; */
   font-family: "Inter", sans-serif;
   color: #343a40;
   border-bottom: 8px solid #087f5b;
@@ -160,6 +159,7 @@ img {
 .testimonial-author {
   color: #c3fae8;
 }
+
 /* CHAIRS */
 
 .chair {
