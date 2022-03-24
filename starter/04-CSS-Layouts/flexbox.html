@@ -52,6 +52,22 @@
       .el {
         align-content: center;
       }
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        background: #eeb850;
+        /* shape-outside: circle(100px at 10px 150px); */
+        clip-path: circle();
+      }
+
+      .poly {
+        width: 100px;
+        height: 100px;
+        background: #eeb850;
+        /* shape-outside: circle(100px at 10px 150px); */
+        clip-path: circle();
+      }
     </style>
   </head>
   <body>
@@ -65,5 +81,10 @@
       <div class="el el--7">to</div>
       <div class="el el--8">learn</div>
     </div>
+
+    <!-- <div class="circle"></div>
+    <div></div> -->
+    <div clas="poly"></div>
+    <div clas="circle"></div>
   </body>
 </html>

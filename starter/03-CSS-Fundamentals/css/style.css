@@ -42,6 +42,17 @@ aside {
   padding: 50px 0px;
   width: 500px;
 }
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::after {
+  content: 'TOP';
+  padding: 5px 10px;
+  background-color: gold;
+  display: inline-block;
+}
 
 h1,
 h2,
