@@ -7,7 +7,7 @@
     <title>CSS Grid</title>
     <style>
       .el--1 {
-        background-color: rgb(189, 129, 245);
+        background-color: blueviolet;
       }
       .el--2 {
         background-color: orangered;
@@ -30,67 +30,34 @@
       }
       .el--8 {
         background-color: crimson;
-        /* height: 100px; */
       }
 
       .container--1 {
         /* STARTER */
         font-family: sans-serif;
-        background-color: blue;
+        background-color: #ddd;
         font-size: 40px;
         margin: 40px;
+        display: grid;
+        grid-template-columns: 250px 150px;
+        gap: 20px;
 
         /* CSS GRID */
-        display: grid;
-        /* layout de 2 dimensoes */
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr;
-
-        gap: 40px 20px;
-        /* display: none; */
-      }
-
-      .el--2 {
-        grid-column: 1 / span 4;
-        grid-row: 2 / 3;
       }
 
       .container--2 {
         /* STARTER */
-
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
         margin: 100px;
 
-        width: 700px;
+        width: 1000px;
         height: 600px;
-        gap: 50px;
+        display: none;
 
         /* CSS GRID */
-        display: grid;
-        grid-template-columns: 125px 200px 125px;
-        grid-template-rows: 150px 150px;
-
-        /* Alinhando as células */
-        align-content: center;
-        justify-content: center;
-
-        /* Alinhando os itens dentro da célula */
-        /* align-items: center;
-        justify-items: center; */
       }
-
-      .el--3 {
-      }
-
-      .el--4 {
-        align-self: start;
-      }
-
-      /* .el--5 {
-        justify-self: center;
-      } */
     </style>
   </head>
   <body>

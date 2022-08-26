@@ -4,121 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omini Food</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html {
-        font-family: 'Rubik';
-        color: #444;
-      }
-
-      .container {
-        margin: 0 auto;
-        width: 1200px;
-      }
-      .header-container {
-        width: 1200px;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-      }
-      .header-container-inner {
-        width: 50%;
-      }
-
-      header {
-        height: 100vh;
-        position: relative;
-        background-image: linear-gradient(
-            rgba(48, 151, 28, 0.233),
-            rgba(172, 19, 19, 0.475),
-            rgba(181, 178, 5, 0.44)
-          ),
-          url(hero.jpg);
-        background-size: cover;
-        color: #fff;
-      }
-      nav {
-        font-size: 20px;
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 32px;
-      }
-
-      h1 {
-        font-size: 52px;
-        margin-bottom: 32px;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 1.6;
-        margin-bottom: 48px;
-      }
-
-      .btn:link,
-      .btn:visited {
-        font-size: 20px;
-        font-weight: 500;
-        background-color: #e67e22;
-        color: #fff;
-        text-decoration: none;
-        padding: 16px 32px;
-        border-radius: 9px;
-      }
-
-      h2 {
-        font-size: 44px;
-        margin-bottom: 48px;
-      }
-
-      section {
-        padding: 96px 0;
-      }
-    </style>
+    <title>Hero Component</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    .accordion {
+      width: 700px;
+      margin: 100px auto;
+      background-color: #343434;
+    }
+  </style>
   <body>
     <header>
-      <nav class="container">
+      <nav>
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
-
-      <div class="header-container">
-        <div class="header-container-inner">
-          <h1>A healthy meal delivered to your door, every single day</h1>
-          <p>
-            The smart 365-days-per-year food subscription that will make you eat
-            health again. Tailored to your personal tastes and nutritional
-            needs.
-          </p>
-          <a href="#" class="btn">Start eating well</a>
-        </div>
+      <div>
+        <h1>A healthy meal delivered to your door</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+          consequuntur cum maiores, quas dolorum autem nobis optio harum
+          recusandae, eum nulla, ea eius.
+        </p>
+        <a href="#">Link</a>
       </div>
     </header>
-
-    <section class="container">
-      <h2>Some random text</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        autem nulla nisi? Corrupti, cum unde. Nulla nisi quos animi, itaque amet
-        ducimus unde placeat rerum quidem. Doloribus alias ipsum ut optio ea
-        libero, laudantium ad odit. Nesciunt commodi adipisci ea!
-      </p>
-    </section>
   </body>
 </html>

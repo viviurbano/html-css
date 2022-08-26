@@ -8,7 +8,6 @@
     <style>
       .el--1 {
         background-color: blueviolet;
-        align-self: flex-start;
       }
       .el--2 {
         background-color: orangered;
@@ -31,7 +30,6 @@
       }
       .el--8 {
         background-color: crimson;
-        align-self: flex-end;
       }
 
       .container {
@@ -40,33 +38,11 @@
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         /* FLEXBOX */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .el {
-        align-content: center;
-      }
-
-      .circle {
-        width: 100px;
-        height: 100px;
-        background: #eeb850;
-        /* shape-outside: circle(100px at 10px 150px); */
-        clip-path: circle();
-      }
-
-      .poly {
-        width: 100px;
-        height: 100px;
-        background: #eeb850;
-        /* shape-outside: circle(100px at 10px 150px); */
-        clip-path: circle();
       }
     </style>
   </head>
@@ -81,10 +57,5 @@
       <div class="el el--7">to</div>
       <div class="el el--8">learn</div>
     </div>
-
-    <!-- <div class="circle"></div>
-    <div></div> -->
-    <div clas="poly"></div>
-    <div clas="circle"></div>
   </body>
 </html>
